@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+class Car
+{
+    private:
+        int make = 1;
+        int model = 2;
+        int year = 3;
+        
+    public:
+        void drive()
+        {
+            cout << "Driving" << make << model << year << "edition" << endl;
+        }
+};
+
+
+class SportsCar : public Car
+{
+    private:
+        int top_speed = 10;
+        
+    public:
+        void drive()
+        {
+            Car::drive();
+            cout << top_speed << endl;
+        }
+};
+
+
+int main()
+{
+    SportsCar seame;
+    seame.drive();
+    
+    return 0;
+}
