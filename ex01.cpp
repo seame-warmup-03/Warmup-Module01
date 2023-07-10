@@ -47,19 +47,22 @@ class Car
             return year;
         }
 
-        void makeSetter(string _make)
+        int makeSetter(string _make)
         {
             make = _make;
+            return (0);
         }
 
-        void modelSetter(string _model)
+        int modelSetter(string _model)
         {
             model = _model;
+            return (0);
         }
 
-        void yearSetter(int _year)
+        int yearSetter(int _year)
         {
             year = _year;
+            return (0);
         }
 
         void drive()
@@ -109,9 +112,10 @@ class SportsCar : public Car
             return topSpeed;
         }
 
-        void topSpeedSetter(int _topSpeed)
+        int topSpeedSetter(int _topSpeed)
         {
             topSpeed = _topSpeed;
+            return (0);
         }
 
         void drive()
